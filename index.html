@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <title>Barbershop</title>
+</head>
+<body>
+        <nav class="navbar navbar-expand-md bg-transparent  sticky-top mynavbar">
+            <div class="container">
+              <a class="navbar-brand" href="#">SapuIjuk29.com</a>
+              <button class="navbar-toggler border-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">SapuIjuk29</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body bd">
+                  <div class="navbar-nav ms-auto navi">
+                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#info">Info</a>
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                    <a class="nav-link" href="#gifts">Gifts</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+    <div class="slider">
+        <div class="list">
+            <div class="item active">
+                <img src="img/download (22).jpg" alt="">
+                <div class="content">
+                    <p>Welcome to</p>
+                    <h2>Barbershop29</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Sint, explicabo, doloremque, ab consequatur at porro sequi 
+                        delectus ex tempore quod adipisci eius deserunt illo deleniti 
+                        tenetur optio vero alias nostrum.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="img/2.jpg" alt="">
+                <div class="content">
+                    <p>haircut</p>
+                    <h2>ManHaircut</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Sint, explicabo, doloremque, ab consequatur at porro sequi 
+                        delectus ex tempore quod adipisci eius deserunt illo deleniti 
+                        tenetur optio vero alias nostrum.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="img/3.jpg" alt="">
+                <div class="content">
+                    <p>haircut</p>
+                    <h2>Baby Face</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Sint, explicabo, doloremque, ab consequatur at porro sequi 
+                        delectus ex tempore quod adipisci eius deserunt illo deleniti 
+                        tenetur optio vero alias nostrum.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="img/4.jpg" alt="">
+                <div class="content">
+                    <p>haircut</p>
+                    <h2>Best_Off</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Sint, explicabo, doloremque, ab consequatur at porro sequi 
+                        delectus ex tempore quod adipisci eius deserunt illo deleniti 
+                        tenetur optio vero alias nostrum.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="img/5.jpg" alt="">
+                <div class="content">
+                    <p>haircut</p>
+                    <h2>Usage</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Sint, explicabo, doloremque, ab consequatur at porro sequi 
+                        delectus ex tempore quod adipisci eius deserunt illo deleniti 
+                        tenetur optio vero alias nostrum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+    </div>
+    <div class="thumbnail">
+        <div class="item active">
+            <img src="img/download (22).jpg" alt="">
+            <div class="content">
+                 Slide 01
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/2.jpg" alt="">
+            <div class="content">
+                Slide 02
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/3.jpg" alt="">
+            <div class="content">
+                Slide 03
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/4.jpg" alt="">
+            <div class="content">
+                Slide 04
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/5.jpg" alt="">
+            <div class="content">
+                Slide 05
+            </div>
+        </div>
+    </div>
+
+
+<script src="app.js"></script>
+<script src="bootstrap.js"></script>
+<script>
+    const stickyTop = document.querySelector('.sticky-top');
+    const offcanvas = document.querySelector('.offcanvas');
+    
+    offcanvas.addEventListener('show.bs.offcanvas', function () {
+    stickyTop.style.overflow = 'visible';
+    });
+    
+    offcanvas.addEventListener('hidden.bs.offcanvas', function () {
+    stickyTop.style.overflow = 'hidden';
+    });
+    
+</script>
+</body>
+</html>
